@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyankima Women's Cooperative</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #7B4A1E;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    header p {
+      margin: 4px 0 0;
+      font-size: 13px;
+    }
+
+    nav {
+      background-color: #a0622a;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 16px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      display: none;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    h2 {
+      color: #7B4A1E;
+      border-bottom: 2px solid #c9916a;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #5a3010;
+    }
+
+    /* Products */
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-left: 4px solid #a0622a;
+    }
+
+    .product h3 {
+      margin: 0 0 6px;
+      font-size: 15px;
+    }
+
+    .product p {
+      margin: 0;
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* Health tips */
+    .tip {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-left: 4px solid #4A7C3F;
+    }
+
+    .tip .meta {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    /* FAQs */
+    .faq {
+      margin-bottom: 14px;
+    }
+
+    .faq p.question {
+      font-weight: bold;
+      margin: 0 0 4px;
+      color: #5a3010;
+    }
+
+    .faq p.answer {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* Contact */
+    .contact-item {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #7B4A1E;
+    }
+
+    footer {
+      background-color: #7B4A1E;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 12px;
+      margin-top: 40px;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kyankima Women's Cooperative</h1>
+  <p>Mukono District, Uganda &nbsp;&bull;&nbsp; Founded 2019</p>
+</header>
+
+<nav>
+  <a href="#" onclick="show('home')">Home</a>
+  <a href="#" onclick="show('about')">About Us</a>
+  <a href="#" onclick="show('products')">Products</a>
+  <a href="#" onclick="show('health')">Health Tips</a>
+  <a href="#" onclick="show('faqs')">FAQs</a>
+  <a href="#" onclick="show('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+  <h2>Welcome</h2>
+  <p>Welcome to the Kyankima Women's Cooperative website. We are a group of 47 women based in Mukono District, Uganda. We grow food, make handcrafts, and share health information in our community.</p>
+  <p>Use the links above to learn more about us, see our products, or get in touch.</p>
+
+  <h3>What we do</h3>
+  <ul>
+    <li>Small-scale agriculture</li>
+    <li>Handcraft production</li>
+    <li>Community health awareness</li>
+  </ul>
+
+  <p><a href="#" onclick="show('products')">See our products</a> &nbsp;|&nbsp; <a href="#" onclick="show('contact')">Contact us</a></p>
+</div>
+
+<!-- ABOUT US -->
+<div id="about" class="page">
+  <h2>About Us</h2>
+
+  <h3>Our Mission</h3>
+  <p>We work together to improve the lives of women and families in Mukono District through farming, crafts, and health education.</p>
+
+  <h3>Our History</h3>
+  <p>Kyankima Women's Cooperative was started in 2019 by 47 women in Mukono District. We began with word of mouth and community radio. Today we have a website to reach more customers and share our work.</p>
+
+  <h3>Quick facts</h3>
+  <ul>
+    <li>Founded: 2019</li>
+    <li>Members: 47 women</li>
+    <li>Location: Mukono District, Uganda</li>
+    <li>Products available: 23</li>
+  </ul>
+
+  <h3>Chairperson's Message</h3>
+  <p><em>"This cooperative is proof that when women stand together, nothing can stop us. We started with a notebook and a dream — and now we have a website to tell the world who we are."</em></p>
+  <p>— Nalwoga Judith, Chairperson</p>
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" class="page">
+  <h2>Our Products</h2>
+  <p>Below are some of the products we sell. To order, contact us on WhatsApp.</p>
+
+  <h3>Agriculture</h3>
+
+  <div class="product">
+    <h3>Dried Maize</h3>
+    <p>Sun-dried and cleaned. Good for milling or cooking.</p>
+  </div>
+
+  <div class="product">
+    <h3>Sweet Potatoes</h3>
+    <p>Fresh from our gardens in Mukono.</p>
+  </div>
+
+  <div class="product">
+    <h3>Dried Beans</h3>
+    <p>Local variety. Clean and ready to cook.</p>
+  </div>
+
+  <div class="product">
+    <h3>Dried Nakati</h3>
+    <p>Traditional leafy vegetable, sun-dried and packed.</p>
+  </div>
+
+  <div class="product">
+    <h3>Matoke (Green Bananas)</h3>
+    <p>Harvested fresh. Available in bunches.</p>
+  </div>
+
+  <div class="product">
+    <h3>Roasted Groundnuts</h3>
+    <p>Hand-roasted. Sold in 500g and 1kg bags.</p>
+  </div>
+
+  <h3>Handcrafts</h3>
+
+  <div class="product">
+    <h3>Woven Basket</h3>
+    <p>Handwoven banana fibre basket in traditional patterns.</p>
+  </div>
+
+  <div class="product">
+    <h3>Raffia Table Mats</h3>
+    <p>Colourful handwoven mats. Sold in sets of 4.</p>
+  </div>
+
+  <div class="product">
+    <h3>Sisal Bag</h3>
+    <p>Handwoven and strong. Good for market days.</p>
+  </div>
+
+  <h3>Health and Wellness</h3>
+
+  <div class="product">
+    <h3>Moringa Leaf Powder</h3>
+    <p>Dried and ground moringa leaves. 100g bag.</p>
+  </div>
+
+  <div class="product">
+    <h3>Shea Butter</h3>
+    <p>Pure unrefined shea butter for skin and hair. 250ml jar.</p>
+  </div>
+
+  <br>
+  <a class="whatsapp-btn" href="https://wa.me/256700000000" target="_blank">Order on WhatsApp</a>
+  <p style="font-size:12px; color:#777;">We have 23 products in total. Contact us for the full list.</p>
+</div>
+
+<!-- HEALTH TIPS -->
+<div id="health" class="page">
+  <h2>Health Tips</h2>
+  <p>Every month, three health workers share tips to help our members and community stay healthy.</p>
+
+  <div class="tip">
+    <div class="meta">Florence Nakato &mdash; Community Nurse, Mukono HC III &mdash; 04/2026</div>
+    <h3>Clean Water This Season</h3>
+    <p>With the rain season here, open water can get dirty. Always boil water before drinking. If a child has diarrhoea, use oral rehydration salts (ORS) and visit a health centre if it continues for more than 24 hours.</p>
+  </div>
+
+  <div class="tip">
+    <div class="meta">Dr. Samuel Waiswa &mdash; Clinical Officer, Mukono District Hospital &mdash; 04/2026</div>
+    <h3>Malaria Prevention</h3>
+    <p>Sleep under a treated mosquito net every night. Clear stagnant water near your home. If you have fever or chills, go for a malaria test. Do not use leftover medicine.</p>
+  </div>
+
+  <div class="tip">
+    <div class="meta">Prossy Nansubuga &mdash; Nutritionist &mdash; 04/2026</div>
+    <h3>Eating Well on a Small Budget</h3>
+    <p>You do not need expensive food to eat well. Nakati, beans, and sweet potatoes give your body what it needs. Eat a mix of orange, green, and white foods each day.</p>
+  </div>
+</div>
+
+<!-- FAQS -->
+<div id="faqs" class="page">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Ordering</h3>
+
+  <div class="faq">
+    <p class="question">How do I place an order?</p>
+    <p class="answer">Send us a WhatsApp message on +256 700 000 000. Tell us the product and how much you need.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">Do you deliver?</p>
+    <p class="answer">We deliver within Mukono District. For areas outside Mukono, we can arrange transport at extra cost.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">What payment methods do you accept?</p>
+    <p class="answer">We accept MTN Mobile Money, Airtel Money, and cash on collection.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">Can I order in Luganda?</p>
+    <p class="answer">Yes! Tukyamu mu Luganda no mu English. (We reply in both Luganda and English.)</p>
+  </div>
+
+  <h3>Products</h3>
+
+  <div class="faq">
+    <p class="question">Are your products grown without chemicals?</p>
+    <p class="answer">Most of our products use very little or no chemical fertiliser. Ask us on WhatsApp for details about a specific product.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">Do you have a full product list?</p>
+    <p class="answer">The website shows a sample. WhatsApp us for the complete list of all 23 products.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">Can I request a custom handcraft item?</p>
+    <p class="answer">Yes. Custom items may take 1 to 2 weeks. Contact us with your idea.</p>
+  </div>
+
+  <h3>About the Cooperative</h3>
+
+  <div class="faq">
+    <p class="question">Can I join the cooperative?</p>
+    <p class="answer">Membership is open to women in Mukono District. Contact Nalwoga Judith to find out more.</p>
+  </div>
+
+  <div class="faq">
+    <p class="question">Is the cooperative registered?</p>
+    <p class="answer">Yes. We are a registered community-based organisation (CBO) in Mukono District since 2019.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+  <h2>Contact Us</h2>
+
+  <div class="contact-item">
+    <strong>Phone (Nalwoga Judith – Chairperson)</strong>
+    <a href="tel:+256700000000">+256 700 000 000</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>Phone (Secretary)</strong>
+    <a href="tel:+256712000000">+256 712 000 000</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>Email</strong>
+    <a href="mailto:kyankima.coop@gmail.com">kyankima.coop@gmail.com</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>WhatsApp</strong>
+    <a href="https://wa.me/256700000000" target="_blank">+256 700 000 000</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>Location</strong>
+    Kyankima Village, Mukono District, Central Region, Uganda
+  </div>
+
+  <div class="contact-item">
+    <strong>Meeting days</strong>
+    Every Saturday, 9:00 AM – 12:00 PM at the village community hall
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Kyankima Women's Cooperative &mdash; Mukono District, Uganda</p>
+</footer>
+
+<script>
+  function show(id) {
+    document.querySelectorAll('.page').forEach(function(p) {
+      p.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0, 0);
+    return false;
+  }
+</script>
+
+</body>
+</html>
